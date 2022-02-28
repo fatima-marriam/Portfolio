@@ -18,6 +18,7 @@
     --scroll-bar-color: #c5cadf;
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b; 
+    --card-bg-clsw: #fff;
 }
 *{
     margin:0px;
@@ -729,7 +730,7 @@ color: var(--hover-color);
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: var(--card-bg-clsw);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -964,4 +965,46 @@ footer a{
     right: 20px;
     pointer-events: all;
     opacity: 1;
+}
+/* ==========================Navigation  nav items============================================= */
+.nav-items a.active{
+    color: var(--second-color);
+}
+/* ===========================Light Dark theme btn================================================================= */
+.theme-btn{
+    z-index: 999999;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background: var(--transparent-color-01);
+    backdrop-filter: blur(20px);
+    width:50px;
+    height:50px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.theme-btn .fa-sun, .theme-btn.sun .fa-moon{
+    display: none;
+}
+.theme-btn.sun .fa-sun{
+   display: block;
+}
+/* ==================================Dark Theme============================================================ */
+.dark-theme{
+--first-color: #fff;
+--third-color: #a9afc3;
+--second-color: #6a59d1;
+--body-bg-color: #0e1b31;
+--card-bg-color: #132347;
+--modal-bg-color: #102048;
+--card-bg-clsw:#0e1b31;
+--bg-transparent-color: rgba(255, 255, 255, 0.1);
+--transparent-color-01: rgba(255, 255, 255, 0.1);
+--line-color: #454f6b;
+--color-filter: invert(0);
+--scroll-bar-color: #c1ceff;
+--scroll-thumb-color: #282f4e;
+--scroll-thumb-hover-color: #454f6b;
 }

@@ -16,24 +16,27 @@
 
 <body>
     <!-- ========================Scroll to top button============================================= -->
-       <div class="scrollToTop-btn flex-center">
-           <i class="fas fa-arrow-up"></i>
-       </div>
-    
-    
-    
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- =============================theme btn Light/Drak================================== -->
+    <div class="theme-btn flex-center">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
     <!-- =========================Header Section================================== -->
     <header>
         <div class="nav-bar">
             <a href="#" class="logo">Maryam </a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home">Home</a>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#scc">Contact</a>
                 </div>
             </div>
         </div>
@@ -330,7 +333,7 @@
         </div>
     </section>
     <!-- ========================Portfolio Section==================================== -->
-    <div class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio">
         <div class="container flex-center">
             <h1 class="section-title-01">Portfolio</h1>
             <h2 class="section-title-02">Portfolio</h2>
@@ -459,7 +462,8 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
     <!-- =====================================Get in touch================================================ -->
     <div class="get-in-touch sub-section">
         <div class="container">
@@ -537,7 +541,8 @@
         </div>
     </section>
     <!-- ==============================Contact Section===================================================== -->
-    <section class="contact section" id="contact">
+    <section id="scc">
+    <div class="contact section" id="contact">
         <div class="container flex-center">
             <h1 class="section-title-01">Contact Me</h1>
             <h2 class="section-title-02">Contact Me</h2>
@@ -570,7 +575,7 @@
                             <input type="text" placeholder="Subject">
                         </div>
                         <div class="first-row">
-                          <textarea name="message" id="" rows="7">Message</textarea>
+                            <textarea name="message" rows="7">Message</textarea>
                         </div>
                         <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
@@ -578,38 +583,38 @@
             </div>
         </div>
     </section>
-<!-- ====================================================Footer Section========================================================== -->
-<footer>
-    <div class="footer-container">
-        <div class="about group">
-            <h2>Maryam</h2>
-            <p>Front-end Developer</p>
-            <a href="#about">About Me</a>
+    <!-- ====================================================Footer Section========================================================== -->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>Maryam</h2>
+                <p>Front-end Developer</p>
+                <a href="#about">About Me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="hr"></div>
-        <div class="info group">
-            <h3>More</h3>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="footer-copyright group">
+            <p>&#169; 2021 by Maryam. All rights reserved</p>
         </div>
-        <div class="hr"></div>
-        <div class="follow group">
-            <h3>Follow</h3>
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-copyright group">
-<p>&#169; 2021 by Maryam. All rights reserved</p>
-    </div>
-</footer>
+    </footer>
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
