@@ -89,6 +89,9 @@ header.sticky{
 header.sticky .nav-bar{
     height: calc(2.5rem + 1rem);  
 }
+.nav-menu-btn{
+    display: none;
+}
 /* ===============================scroll bar============================== */
 ::-webkit-scrollbar{
     width: 10px;
@@ -241,14 +244,14 @@ color: var(--hover-color);
   /* ====================================About Page============================== */
   .section{
       position: relative;
-      width: 1150px;
+      max-width: 1150px;
       margin-left: auto;
       margin-right: auto;
       padding: 6rem 2rem 2rem;
   }
   .sub-section{
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 0;
@@ -319,6 +322,13 @@ color: var(--hover-color);
  .about-info .professional-list{
      display: flex;
      column-gap: 30px ;
+ }
+ .about-info .professional-list .list-item{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 15px;
+     margin-bottom: 20px;
  }
  .about-info .professional-list .list-item h3{
      font-size: 2.5em;
@@ -1008,4 +1018,112 @@ footer a{
 --scroll-bar-color: #c1ceff;
 --scroll-thumb-color: #282f4e;
 --scroll-thumb-hover-color: #454f6b;
+}
+/* ===================================Media Query============================================================================================= */
+@media screen and (max-width: 1070px){
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--transparent-color-01);
+    visibility: hidden;
+    transition: .3s ease;
+    opacity: 0;
+}
+.navigation.active{
+    visibility: visible;
+    opacity: 1;
+}
+.nav-menu-btn{
+    background: url(./images/menu.png)no-repeat;
+    filter: var(--color-filter);
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+}
+.nav-items{
+    position: relative;
+    background: var(--modal-bg-color);
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .3s ease;
+}
+.navigation.active .nav-items{
+    transform: translateY(0);
+}
+.nav-items a{
+    margin: 15px 50px;
+}
+.nav-close-btn{
+    position: absolute;
+    background: url(./images/cross.png)no-repeat;
+    filter: var(--color-filter);
+    background-size: 12px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top:0;
+    right:0;
+    margin: 10px;
+    cursor: pointer;
+}
+.home .home-container .info{
+    font-size: 0.85rem;
+}
+.about .container .content{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+}
+.about-img img{
+    min-width: 0;
+    width: 100%;
+}
+.about-info{
+    min-width: 0;
+    width: 100%;
+}
+.about-info .professional-list{
+    flex-direction: column;
+}
+.about-info .portfolio-list .list-item{
+    justify-content: start;
+}
+.get-in-touch .contact-card{
+    display: grid;
+    width: 100%;
+}
+.contact-card .title{
+    font-size: 0.8rem;
+    line-height: 50px;
+}
+.mySwiper .swiper-slide{
+    flex-direction: column;
+}
+.client-details{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.swiper {
+    max-width: 80%;
+    max-height: 390%;
+    margin-bottom: 90px;
+}
+
 }
