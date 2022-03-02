@@ -1168,7 +1168,13 @@ footer .footer-container{
         margin-bottom:-240px;
         position: relative;
         right: 0;
-    }    
+    }  
+    .home-container .home-img img{
+        width: 45% !important;
+        margin-left: 34px;
+        margin-bottom: 40px;
+        transform:  translate(80px, -180px);
+    }  
 }
 @media screen and (max-width: 730px) {
     body{
