@@ -632,9 +632,9 @@ color: var(--hover-color);
     z-index: 999999;
     position: fixed;
     width: 100%;
-    top: 0%;
-    left: 0;
     height: 100vh;
+    top: 0;
+    left: 0;    
     background: var(--transparent-color-01);
     backdrop-filter: blur(20px);
     visibility: hidden;
@@ -648,18 +648,18 @@ color: var(--hover-color);
 .portfolio-model-body{
     position: relative;
     background: var(--modal-bg-color);
-    max-width: 400px;
+    max-width: 500px;
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    max-height: 500px;
+    max-height: 550px;
     overflow: hidden;
     transform: translateY(-50px);
     transition: .5s ease;
 }
 .portfolio-model.active .portfolio-model-body {
-    transform: translateY(0px);
+    transform: translateY(0);
 }
 
 .portfolio-close-btn{
