@@ -1178,7 +1178,7 @@ footer .footer-container{
 }
 @media screen and (max-width: 730px) {
     body{
-        margin: 5rem 0 0 0;
+        margin: 5rem 0 0 0;  
     }
     .section-title-01{
         font-size: 3em;
